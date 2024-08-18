@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- calculate contianer start -->
+    <div class="main-container">
+       <div class="title">
+        <h2>Gold Calculator</h2>
+        <i class="fa-solid fa-coins"></i>
+       </div> 
+        <div class="calculate-container">
+            <label for="weightInGram">Gold weight (in gram):</label>
+            <input type="number" id="weightInGram" placeholder="write your gold weight..">
+
+            <label for="salePrice">Sale Price:</label>
+            <input type="number" id="salePrice" placeholder="write the sale price..">
+
+            <label for="currentPrice">Current Gold price:</label>
+            <input type="number" id="currentPrice" placeholder="write current gold price..">
+            <button onclick=" calculate()">Calculate</button>
+        </div>
+        <!-- calculate container end -->
+
+         <!-- Result container -->
+        <div class="reult-container">
+            <h2>Results:</h2>
+            <div class="line"></div>
+            <p>ရွှေအလေးချိန်: <strong id="weightInPae">0</strong>  ပဲ</p>
+            <p>ရွှေတန်ဖိုး: <strong id="actualGoldPrice">0</strong> ကျပ်</p>
+            <p>လက်ခ: <strong id="serviceCharges">0</strong> ကျပ်</p>
+        </div>
+    </div>
+    <!-- Result container end -->
+</body>
+<script src="script.js"></script>
+</html>
